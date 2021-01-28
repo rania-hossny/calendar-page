@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="evo-calendar.royal-navy.min.css">
+  <link rel="stylesheet" href="evo-calendar.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <div class="sidebar-heading">
+        <img src="pietra-schwarzler-FqdfVIdgR98-unsplash.jpg" class="img-side">
+        <p class="name-side">Name</p>
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item1 list-group-item-action ">
+          <i class="fas fa-user"></i><span>Profile</span></a>
+        <a href="#" class="list-group-item1 list-group-item-action ">
+          <i class="fas fa-users"></i><span>Teams</span></a>
+        <a href="#" class="list-group-item1 list-group-item-action ">
+          <i class="fas fa-calendar-week"></i><span>Calendar</span></a>
+        <a href="#" class="list-group-item1 list-group-item-action ">
+          <i class="fas fa-envelope"></i><span>Messages</span></a>
+        <a href="#" class="list-group-item1 list-group-item-action ">
+          <i class="fas fa-sliders-h"></i><span>Setting</span></a>
+        <a href="#" class="list-group-item1 list-group-item-action">
+          <i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="btn " id="menu-toggle"><i class="fas fa-bars" id="sidebar_btn"></i></button>
+
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        
+        <div class="ml-auto">
+          <ul class="navbar-nav ml-auto  mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"  class="bell">
+                <i class="fa fa-bell "></i>
+                <div class="notification">3</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> <img src="pietra-schwarzler-FqdfVIdgR98-unsplash.jpg" width="50px" height="50px"></a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        
+        <div id="calendar"></div>
+     
+      </div>
+
+      <div class="container-fluid">
+        <a href="#" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus-circle"></i></a>
+
+
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Event</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color: white;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+
+            <div class="col-md-12 mb-3">
+              <label >Event name</label>
+              <input type="text" class="form-control" placeholder="Event name" name="eventname" required> 
+          </div>
+          </div>
+          <div class="form-row">
+
+            <div class="col-md-12 mb-3">
+              <label >Description</label>
+              <input type="text" class="form-control" placeholder="Description"  name="eventdesc" required> 
+          </div>
+          </div>
+          <div class="form-row">
+
+            <div class="col-md-12 mb-3">
+              <label >Start Date</label>
+              <input type="date" class="form-control" name="eventdate1" required> 
+          </div>
+          </div>
+          <div class="form-row">
+
+            <div class="col-md-12 mb-3">
+              <label >End Date</label>
+              <input type="date" class="form-control"name="eventdate2" required> 
+          </div>
+          </div>
+          <div class="form-row">
+            <label >Type</label>
+            <select class="custom-select" name="eventtype" required>
+              <option >
+                event
+            </option>
+            <option>
+                meeting
+            </option>
+            </select>
+
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button> -->
+        <button type="button" class="btn add">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="evo-calendar.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

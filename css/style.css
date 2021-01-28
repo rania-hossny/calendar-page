@@ -1,0 +1,127 @@
+.navbar {
+  background: #216583;
+}
+.navbar #menu-toggle {
+  border: none;
+  box-shadow: 0 0 0;
+}
+.navbar #menu-toggle i {
+  color: #fff;
+  font-size: 25px;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+.navbar #menu-toggle:hover i {
+  color: black;
+}
+
+.list-group-item1 {
+  color: white;
+  padding: 19px 22px;
+}
+
+.list-group-item1:hover {
+  color: black;
+  background: none;
+}
+
+#sidebar-wrapper,
+.list-group-item1 {
+  background: #216583;
+}
+
+.list-group i {
+  margin-right: 9px;
+}
+
+.sidebar-heading .img-side {
+  width: 109px;
+  height: 107px;
+  margin-left: 23px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.name-side {
+  color: white;
+}
+.sidebar-heading p {
+  margin-top: 10px;
+  margin-left: 55px;
+}
+
+.nav-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav-item .fa-bell {
+  font-size: 29px;
+  margin-top: 12px;
+  color: white;
+}
+.bell {
+  position: relative;
+}
+
+.notification {
+  position: absolute;
+  width: 19px;
+  height: 20px;
+  top: 20px;
+  right: 86px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.fa-plus-circle {
+  font-size: 39px;
+  margin: 0px 12px;
+  color: #216583;
+}
+
+/* Calendar */
+#calendar {
+  /* width: 80%; */
+  margin: 30px 0px;
+}
+
+/* modal */
+
+.modal-header {
+  background-color: #216583;
+}
+
+.modal-title {
+  color: white;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-footer {
+  background-color: #216583;
+  justify-content: center;
+}
+.modal-footer .add {
+  background-color: #f7be16;
+  color: white;
+  font-size: 18px;
+  width: 121px;
+}
+
+@media (min-width: 500px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
